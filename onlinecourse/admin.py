@@ -33,7 +33,7 @@ class LessonAdmin(admin.ModelAdmin):
     #list_display = ('question', 'choice_text','is_correct')
 
 class QuestionAdmin(admin.ModelAdmin):
-    inlines = [ChoiceInLine]
+   #inlines = [ChoiceInLine]
     list_display = ('course', 'lesson', 'question_text', 'grade')
 
 
