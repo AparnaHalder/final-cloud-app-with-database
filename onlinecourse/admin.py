@@ -29,8 +29,8 @@ class CourseAdmin(admin.ModelAdmin):
 class LessonAdmin(admin.ModelAdmin):
     list_display = ['title']
 
-#class ChoiceAdmin(admin.ModelAdmin):
-    #list_display = ('question', 'choice_text','is_correct')
+class ChoiceAdmin(admin.ModelAdmin):
+    list_display = ('question', 'choice_text','is_correct')
 
 class QuestionAdmin(admin.ModelAdmin):
    #inlines = [ChoiceInLine]
@@ -43,8 +43,8 @@ class QuestionAdmin(admin.ModelAdmin):
 admin.site.register(Course, CourseAdmin)
 admin.site.register(Lesson, LessonAdmin)
 admin.site.register(Question, QuestionAdmin)
-#admin.site.register(Choice, ChoiceAdmin)
-admin.site.register(Choice)
+admin.site.register(Choice, ChoiceAdmin)
+#admin.site.register(Choice)
 admin.site.register(Submission)
 admin.site.register(Instructor)
 admin.site.register(Learner)
