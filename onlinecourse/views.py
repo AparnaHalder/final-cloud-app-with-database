@@ -134,11 +134,7 @@ def extract_answers(request):
 
 # <HINT> Create an exam result view to check if learner passed exam and show their question results and result for each question,
 # you may implement it based on the following logic:
-        
-        
-        
-        
-#def show_exam_result(request, course_id, submission_id):
+ 
 def show_exam_result(request, course_id, submission_id):
     # Get course and submission based on their ids
     course = get_object_or_404(Course, pk=course_id)
